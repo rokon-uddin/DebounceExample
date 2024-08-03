@@ -8,14 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		2F352C832C57419F00BA5E94 /* DebounceExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F352C822C57419F00BA5E94 /* DebounceExampleView.swift */; };
+		2FDBD3602C5E32D300F14660 /* DebounceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBD35F2C5E32D300F14660 /* DebounceExampleTests.swift */; };
 		2FDEF4E32C5B473D000A18E9 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDEF4E22C5B473D000A18E9 /* Operator.swift */; };
 		2FF3A4632C56B3C800A6095F /* DebounceExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3A4622C56B3C800A6095F /* DebounceExampleApp.swift */; };
 		2FF3A4672C56B3C900A6095F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF3A4662C56B3C900A6095F /* Assets.xcassets */; };
 		2FF3A46A2C56B3C900A6095F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF3A4692C56B3C900A6095F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2FDBD3612C5E32D300F14660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FF3A4572C56B3C800A6095F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF3A45E2C56B3C800A6095F;
+			remoteInfo = DebounceExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2F352C822C57419F00BA5E94 /* DebounceExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceExampleView.swift; sourceTree = "<group>"; };
+		2FDBD35D2C5E32D300F14660 /* DebounceExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebounceExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDBD35F2C5E32D300F14660 /* DebounceExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceExampleTests.swift; sourceTree = "<group>"; };
 		2FDEF4E22C5B473D000A18E9 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		2FF3A45F2C56B3C800A6095F /* DebounceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebounceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF3A4622C56B3C800A6095F /* DebounceExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceExampleApp.swift; sourceTree = "<group>"; };
@@ -24,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2FDBD35A2C5E32D300F14660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF3A45C2C56B3C800A6095F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FDBD35E2C5E32D300F14660 /* DebounceExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBD35F2C5E32D300F14660 /* DebounceExampleTests.swift */,
+			);
+			path = DebounceExampleTests;
+			sourceTree = "<group>";
+		};
 		2FF3A4562C56B3C800A6095F = {
 			isa = PBXGroup;
 			children = (
 				2FF3A4612C56B3C800A6095F /* DebounceExample */,
+				2FDBD35E2C5E32D300F14660 /* DebounceExampleTests */,
 				2FF3A4602C56B3C800A6095F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF3A45F2C56B3C800A6095F /* DebounceExample.app */,
+				2FDBD35D2C5E32D300F14660 /* DebounceExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +103,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2FDBD35C2C5E32D300F14660 /* DebounceExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDBD3652C5E32D300F14660 /* Build configuration list for PBXNativeTarget "DebounceExampleTests" */;
+			buildPhases = (
+				2FDBD3592C5E32D300F14660 /* Sources */,
+				2FDBD35A2C5E32D300F14660 /* Frameworks */,
+				2FDBD35B2C5E32D300F14660 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FDBD3622C5E32D300F14660 /* PBXTargetDependency */,
+			);
+			name = DebounceExampleTests;
+			productName = DebounceExampleTests;
+			productReference = 2FDBD35D2C5E32D300F14660 /* DebounceExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2FF3A45E2C56B3C800A6095F /* DebounceExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FF3A46D2C56B3C900A6095F /* Build configuration list for PBXNativeTarget "DebounceExample" */;
@@ -100,6 +148,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					2FDBD35C2C5E32D300F14660 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2FF3A45E2C56B3C800A6095F;
+					};
 					2FF3A45E2C56B3C800A6095F = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -119,11 +171,19 @@
 			projectRoot = "";
 			targets = (
 				2FF3A45E2C56B3C800A6095F /* DebounceExample */,
+				2FDBD35C2C5E32D300F14660 /* DebounceExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2FDBD35B2C5E32D300F14660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF3A45D2C56B3C800A6095F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2FDBD3592C5E32D300F14660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDBD3602C5E32D300F14660 /* DebounceExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF3A45B2C56B3C800A6095F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +216,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2FDBD3622C5E32D300F14660 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FF3A45E2C56B3C800A6095F /* DebounceExample */;
+			targetProxy = 2FDBD3612C5E32D300F14660 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2FDBD3632C5E32D300F14660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rokonuddin.DebounceExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DebounceExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DebounceExample";
+			};
+			name = Debug;
+		};
+		2FDBD3642C5E32D300F14660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rokonuddin.DebounceExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DebounceExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DebounceExample";
+			};
+			name = Release;
+		};
 		2FF3A46B2C56B3C900A6095F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2FDBD3652C5E32D300F14660 /* Build configuration list for PBXNativeTarget "DebounceExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDBD3632C5E32D300F14660 /* Debug */,
+				2FDBD3642C5E32D300F14660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2FF3A45A2C56B3C800A6095F /* Build configuration list for PBXProject "DebounceExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
